@@ -14,6 +14,7 @@ class CategoriesRepository implements ICategoriesRepository {
     this.categories = [];
   }
 
+  // padrão de projeto singleton
   public static getInstance(): CategoriesRepository {
     if (!this.INSTANCE) {
       this.INSTANCE = new CategoriesRepository();

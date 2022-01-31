@@ -10,7 +10,7 @@ interface ICategoriesImported {
 
 class ImportCategoriesUseCase {
   constructor(private categoriesRepository: ICategoriesRepository) { }
-  loadCategories(file: Express.Multer.File) {
+  loadCategories(file: Express.Multer.File): Promise<ICategoriesImported[]> {
     return new Promise((resolve, reject) => {
       const categoriesImported: ICategoriesImported[] = [];
       const parseFile = parse();

@@ -26,6 +26,7 @@ class ImportCategoriesUseCase {
           });
         })
         .on("end", () => {
+          fs.promises.unlink(file.path); // remove o arquivo após importado
           resolve(categoriesImported);
         })
         .on("error", (err) => {
@@ -37,9 +38,9 @@ class ImportCategoriesUseCase {
     const categories = await this.loadCategories(file);
     categories.map(async (category) => {
       const { name, description } = category;
-      const categoryIsExists = this.categoriesRepository.findByName(name);
+      const categoryIsExists = await this.categoriesRepository.findByName(name);
       if (!categoryIsExists) {
-        this.categoriesRepository.create({
+        await this.categoriesRepository.create({
           name,
           description,
         });

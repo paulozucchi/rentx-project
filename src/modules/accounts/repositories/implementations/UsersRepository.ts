@@ -1,9 +1,9 @@
 import { getRepository, Repository } from "typeorm";
 
 import { User } from "../../entities/User";
-import { ICreateUserDTO } from "../IUsersRepository";
+import { ICreateUserDTO, IUsersRepository } from "../IUsersRepository";
 
-class UsersRepository {
+class UsersRepository implements IUsersRepository {
   repository: Repository<User>;
 
   constructor() {

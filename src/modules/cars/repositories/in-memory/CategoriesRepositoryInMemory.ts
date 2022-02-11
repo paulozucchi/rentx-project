@@ -17,8 +17,8 @@ class CategoriesRepositoryInMemory implements ICategoriesRepository {
     name,
     description,
   }: {
-    name: any;
-    description: any;
+    name: string;
+    description: string;
   }): Promise<ICategoriesModelDTO> {
     const category = new Category();
     Object.assign(category, {

@@ -6,7 +6,10 @@ interface ICategoriesModelDTO {
 }
 
 interface ICategoriesRepository {
-  create({ name, description }): Promise<ICategoriesModelDTO>;
+  create({
+    name,
+    description,
+  }: ICategoriesModelDTO): Promise<ICategoriesModelDTO>;
   findByName(name: string): Promise<Category>;
   list(): Promise<Category[]>;
 }

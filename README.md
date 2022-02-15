@@ -2,7 +2,7 @@
 
 API to car rentals project.
 
-# Cadastro de carros*
+### Cadastro de carros
 **Requisitos funcionais**
 - Deve ser possível cadastrar um carro.
 - Deve ser possível listar todas as categorias.
@@ -13,7 +13,7 @@ API to car rentals project.
 - O carro deve ser cadastrado como disponível por padrão.
 - Somente administradores podem cadastrar carros.
 
-# Listagem de carros
+### Listagem de carros
 **Requisitos funcionais**
 - Deve ser possível listar todos os carros disponíveis.
 - Deve ser possível listar todos os carros disponíveis pelo nome da categoria.
@@ -23,7 +23,7 @@ API to car rentals project.
 **Regras de negócio**
 - Não precisa estar logado para listar carros.
 
-# Cadastro de especificações do carro
+### Cadastro de especificações do carro
 **Requisitos funcionais**
 - Deve ser possível cadastrar uma ou mais especificações para um carro.
 - Deve ser possível listar todas as especificações
@@ -32,7 +32,7 @@ API to car rentals project.
 **Regras de negócio**
 - Não deve ser possível cadastrar uma especificação já cadastrada.
 
-# Cadastro de imagens do carro
+### Cadastro de imagens do carro
 **Regras funcionais**
 - Deve ser possível cadastrar imagens do carro.
 - Deve ser possível listar todos os carros.
@@ -41,7 +41,7 @@ API to car rentals project.
 - Possibilitar cadastrar mais de uma imagem para o mesmo carro.
 - Somente administradores podem cadastrar imagens.
 
-# Aluguel de carros
+### Aluguel de carros
 **Regras funcionais**
 - Deve ser possível alugar um carro.
 

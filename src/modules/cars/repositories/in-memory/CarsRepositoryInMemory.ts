@@ -44,6 +44,7 @@ class CarsRepositoryInMemory implements ICarsRepository {
       ) {
         return car;
       }
+      return null;
     });
     return all;
   }
